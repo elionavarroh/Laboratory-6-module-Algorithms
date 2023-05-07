@@ -1,0 +1,14 @@
+header {
+    text-align: center;
+};
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+};
+main {
+    text-align: left;
+}
+button {
+    background-color: green;
+    text-align: center;
+}
