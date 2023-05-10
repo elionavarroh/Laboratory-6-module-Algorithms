@@ -105,12 +105,22 @@ var calculation = () => {
     console.log(total);
     console.log(iva);
     console.log(subtotal);
+    document.getElementById("subtotal").innerText = "Subtotal" + subtotal;
+    document.getElementById("iva").innerText = "Iva" + iva;
+    document.getElementById("total").innerText = "Total" + total;
 };
 
 //events 
 document.getElementById("calculate").addEventListener("click", calculation);
 
-//pantalla
-document.getElementById("subtotal").innerText = "Subtotal"
-document.getElementById("iva").innerText = "Iva"
-document.getElementById("total").innerText = "Total"
+//extra
+var cont = 0
+for (var i = 0; i < products.length; i++) {
+cont = cont + products.units;
+};
+
+if (products.units = 0) {
+    document.getElementById("calculate").disabled = true;
+} else {
+    document.getElementById("calculate").disabled = false;
+};
