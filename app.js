@@ -105,9 +105,9 @@ var calculation = () => {
     console.log(total);
     console.log(iva);
     console.log(subtotal);
-    document.getElementById("subtotal").innerText = "Subtotal" + subtotal;
-    document.getElementById("iva").innerText = "Iva" + iva;
-    document.getElementById("total").innerText = "Total" + total;
+    document.getElementById("subtotal").innerText = "Subtotal " + subtotal;
+    document.getElementById("iva").innerText = "Iva " + iva;
+    document.getElementById("total").innerText = "Total " + total;
 };
 
 //events 
